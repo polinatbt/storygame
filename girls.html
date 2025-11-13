@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Главные стервы школы</title>
+    <link rel="stylesheet" href="girls.css">
+    <script defer>
+        function goTo(page) {
+            window.location.href = page;
+        }
+    </script>
+</head>
+
+<body>
+    <div class="overlay">
+        <h2 class="choice-title">Главные стервы школы</h2>
+        <p class="description">
+            Девочки оказались главными стервами в школе, они отпиздили тебя в столовой, отобрали ланч и все деньги, и
+            еще раз отпиздили за школой. Что будешь делать?
+        </p>
+
+        <div class="choice-grid">
+            <div class="choice">
+                <img src="images/fight.jpg" alt="Дать сдачу">
+                <p class="choice-text">Не на ту напали сучки </p>
+                <button onclick="goTo('fight.html')">Отхуярить по полной</button>
+            </div>
+
+            <div class="choice">
+                <img src="images/forgive.jpg" alt="Стерпеть">
+                <p class="choice-text">Стянуть ебало, схавать и простить</p>
+                <button onclick="goTo('loser.html')">Стерпеть</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

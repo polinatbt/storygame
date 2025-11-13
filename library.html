@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Библиотечная сцена</title>
+    <link rel="stylesheet" href="boys.css">
+    <script defer>
+        function goTo(page) {
+            window.location.href = page;
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="overlay">
+        <h2 class="choice-title">📚 Библиотечная сцена</h2>
+        <p class="description">
+            Вы с этим парнем мило проводите время, делаете тупейший проект по американской школьной программе и много смеётесь.
+            Кажется, он тянется тебя поцеловать.
+        </p>
+
+        <div class="choice-grid">
+            <div class="choice">
+                <img src="images/distancing.jpg" alt="Отстраниться">
+                <p class="choice-text">Остаться сдержанной, сделать вид, что не заметила его намерений.</p>
+                <button onclick="goTo('out.html')">😳 Отстраниться</button>
+            </div>
+
+            <div class="choice">
+                <img src="images/kiss.jpg" alt="Поцеловать">
+                <p class="choice-text">Закрыть глаза и позволить моменту случиться.</p>
+                <button onclick="goTo('kiss.html')">💋 Поцеловать</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

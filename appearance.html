@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Выбор внешности</title>
+    <link rel="stylesheet" href="appearance.css">
+    <script src="appearance.js" defer></script>
+</head>
+
+<body>
+
+    <div class="overlay">
+        <h2 class="choice-title">Выбери свою внешность</h2>
+        <p class="description">
+            Ты сделала пластическую операцию, переехала в Америку и пошла в новую школу, выбери свое новое лицо
+        </p>
+
+        <div class="character-grid">
+            <img src="images/2.jpg" alt="Персонаж 1" onclick="selectCharacter(1)">
+            <img src="images/3.jpg" alt="Персонаж 2" onclick="selectCharacter(2)">
+            <img src="images/4.jpg" alt="Персонаж 3" onclick="selectCharacter(3)">
+            <img src="images/5.jpg" alt="Персонаж 4" onclick="selectCharacter(4)">
+        </div>
+
+        <p id="character-comment" class="comment"></p>
+        <!-- кнопка теперь рабочая -->
+        <button id="continue-btn" onclick="goNext()" style="display:none;">Продолжить</button>
+    </div>
+
+</body>
+
+</html>

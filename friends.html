@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Новые подруги</title>
+    <link rel="stylesheet" href="friends.css">
+    <script defer>
+        function goTo(page) {
+            window.location.href = page;
+        }
+    </script>
+</head>
+
+<body>
+    <div class="overlay">
+        <h2 class="choice-title">Вы лучшие подруги!</h2>
+        <p class="description">
+            Твое доброе сердце направило стерв на путь истинный, они стали добрыми, и теперь вы лучшие подруги.
+            Что будете делать дальше?
+        </p>
+
+        <div class="choice-grid">
+            <div class="choice">
+                <img src="images/church.jpg" alt="Церковь">
+                <p class="choice-text">Каждое воскресенье ходите в церковь, у вас angel вайб, вы пахнете ладаном,
+                    слушаете тухолиса и очень нишевые ✨</p>
+                <button onclick="goTo('church.html')">⛪ В церковь</button>
+            </div>
+
+            <div class="choice">
+                <img src="images/party.jpg" alt="Вечеринка">
+                <p class="choice-text">Каждую пятницу устраиваете вечеринки у бассейна, где вся школа бухает как не в
+                    себя 🍾</p>
+                <button onclick="goTo('party.html')">🎉 На вечеринку</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

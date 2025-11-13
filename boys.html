@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Парни школы</title>
+    <link rel="stylesheet" href="boys.css">
+    <script defer>
+        function goTo(page) {
+            window.location.href = page;
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="overlay">
+        <h2 class="choice-title">Парни школы</h2>
+        <p class="description">
+            Ты понравилась двум парням: красавчику спортсмену и самому умному красавчику школы. Куда пойдешь на перерыве?
+        </p>
+
+        <div class="choice-grid">
+
+            <div class="choice">
+                <img src="images/sportsman.jpg" alt="Спортсмен">
+                <p class="choice-text">Со спортсменом на баскетбольную площадку</p>
+                <button onclick="goTo('baseball.html')">Пойти с ним</button>
+            </div>
+
+            <div class="choice">
+                <img src="images/smartboy.jpg" alt="Умник">
+                <p class="choice-text">С красавчиком в библиотеку</p>
+                <button onclick="goTo('library.html')">Пойти с ним</button>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

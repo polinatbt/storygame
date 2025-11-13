@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Королева школы</title>
+    <link rel="stylesheet" href="queen.css">
+    <script defer>
+        function goTo(page) {
+            window.location.href = page;
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="overlay">
+        <h2 class="choice-title">👑 Ты — королева школы 👑</h2>
+        <p class="description">
+            После того как ты стала помыкать стервами, всё изменилось.
+            Все признали тебя самой популярной, тебя выбрали королевой бала.
+            Вся школа смотрит тебе в рот, но... что ты чувствуешь на самом деле?
+        </p>
+
+        <div class="choice-grid">
+            <div class="choice">
+                <img src="images/queen_confident.jpg" alt="Королева довольна">
+                <p class="choice-text">Какая еще к чертям собачьим неуверенность я королева в классе</p>
+                <button onclick="goTo('bitch.html')">👠 Меня всё устраивает</button>
+            </div>
+
+            <div class="choice">
+                <img src="images/queen_sad.jpg" alt="Грустная королева">
+                <p class="choice-text">Это не то, чего я хотела... Все совсем не так...</p>
+                <button onclick="goTo('kind.html')">💔 Мне нужны друзья</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

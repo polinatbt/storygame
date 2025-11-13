@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>С кем сесть</title>
+    <link rel="stylesheet" href="seating.css">
+    <script defer>
+        function goTo(page) {
+            window.location.href = page;
+        }
+    </script>
+</head>
+
+<body>
+    <div class="overlay">
+        <h2 class="choice-title">С кем сесть?</h2>
+        <p class="description">Пора заводить первые знакомства, выбери, с кем сядешь рядом</p>
+
+        <div class="choice-grid">
+            <div class="choice">
+                <img src="images/seat1.jpg" alt="Человек 1">
+                <p class="choice-text"> На вид милые девочки </p>
+                <button onclick="goTo('girls.html')">Сесть рядом с ними</button>
+            </div>
+
+            <div class="choice">
+                <img src="images/seat2.jpg" alt="Человек 2">
+                <p class="choice-text">Вроде дружелюбные парни</p>
+                <button onclick="goTo('boys.html')">Сесть рядом с ними</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

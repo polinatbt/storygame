@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Выбор одежды</title>
+    <link rel="stylesheet" href="outfit.css">
+    <script src="outfit.js" defer></script>
+</head>
+
+<body>
+
+    <div class="overlay">
+        <h2 class="choice-title">Выбери свою одежду</h2>
+        <p class="description">Первое впечатление это очень важно, подумай над нарядом</p>
+
+        <div class="outfit-grid">
+            <img src="images/outfit1.jpg" alt="Одежда 1" onclick="selectOutfit(1)">
+            <img src="images/outfit2.jpg" alt="Одежда 2" onclick="selectOutfit(2)">
+            <img src="images/outfit3.jpg" alt="Одежда 3" onclick="selectOutfit(3)">
+            <img src="images/outfit4.jpg" alt="Одежда 4" onclick="selectOutfit(4)">
+        </div>
+
+        <p id="outfit-comment" class="comment"></p>
+        <button id="continue-btn" onclick="goNext()" style="display:none;">Продолжить</button>
+    </div>
+
+</body>
+
+</html>

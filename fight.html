@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ты дала сдачу</title>
+    <link rel="stylesheet" href="fight.css">
+    <script defer>
+        function goTo(page) {
+            window.location.href = page;
+        }
+    </script>
+</head>
+
+<body>
+    <div class="overlay">
+        <h2 class="choice-title">Ты дала сдачу</h2>
+        <p class="description">
+            Стервы в шоке! Они никогда не встречали такого. Они попросили прощения и купили обед (на твои деньги).
+            Что будешь делать дальше?
+        </p>
+
+        <div class="choice-grid">
+            <div class="choice">
+                <img src="images/friends.jpg" alt="Дружить">
+                <p class="choice-text">Дружить с ними, показать, что добро побеждает ✨</p>
+                <button onclick="goTo('friends.html')">🤝 Дружить</button>
+            </div>
+
+            <div class="choice">
+                <img src="images/queen.jpg" alt="Помыкать">
+                <p class="choice-text">Помыкать ими, показать, кто теперь главная 👑</p>
+                <button onclick="goTo('queen.html')">👠 Помыкать</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

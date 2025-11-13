@@ -1,0 +1,134 @@
+/* Сброс стилей */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    font-family: "Segoe UI", sans-serif;
+    color: #fff;
+    overflow: hidden;
+}
+
+/* Каждый экран */
+.screen {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.screen.active {
+    display: flex;
+}
+
+/* Главный экран */
+#main-screen {
+    background-image: url("images/1.jpg");
+    position: relative;
+    overflow: hidden;
+}
+
+/* --- Анимированные звездочки --- */
+#main-screen::before,
+#main-screen::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(white 1px, transparent 1px);
+    background-size: 80px 80px;
+    opacity: 0.3;
+    animation: moveStars 60s linear infinite;
+    pointer-events: none;
+    /* Сделали клики возможными на кнопках */
+}
+
+#main-screen::after {
+    animation-delay: -30s;
+    opacity: 0.15;
+}
+
+@keyframes moveStars {
+    from {
+        transform: translate(0, 0);
+    }
+
+    to {
+        transform: translate(-80px, -80px);
+    }
+}
+
+/* --- Оверлей и контент --- */
+.overlay {
+    background: rgba(0, 0, 0, 0.55);
+    text-align: center;
+    padding: 40px;
+    border-radius: 20px;
+    animation: fadeIn 2s ease, zoomIn 2s ease;
+}
+
+.game-title {
+    font-size: 52px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-shadow: 0 0 20px #ffb6c1, 0 0 30px #ff69b4;
+}
+
+.subtitle {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #ffddee;
+}
+
+/* --- Кнопка --- */
+.start-btn {
+    font-size: 22px;
+    padding: 12px 36px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(45deg, #ff7eb9, #ff65a3);
+    color: white;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    box-shadow: 0 0 20px rgba(255, 192, 203, 0.5);
+}
+
+.start-btn:hover {
+    transform: scale(1.1) rotate(-1deg);
+    box-shadow: 0 0 30px rgba(255, 105, 180, 0.8);
+    background: linear-gradient(45deg, #ff92c2, #ff55aa);
+}
+
+/* --- Анимации --- */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.9);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}

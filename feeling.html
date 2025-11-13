@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Отрефлексировать</title>
+    <link rel="stylesheet" href="feeling.css">
+    <script defer>
+        function goTo(page) {
+            window.location.href = page;
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="overlay">
+        <h2 class="choice-title">Отрефлексировать ситуацию</h2>
+        <p class="description">
+            Ты вдруг понимаешь, что именно вызвало в тебе странные чувства - тебе понравилось быть в доминирующей позиции и наблюдать как мэн плачет и унижается
+        </p>
+
+        <div class="choice-grid">
+
+            <div class="choice">
+                <img src="images/omg.jpg" alt="Выбор 1">
+                <p class="choice-text">Сказать парню что тебе нравится унижение мужчин и ты бы хотела кое что попробовать</p>
+                <button onclick="goTo('omg.html')">Признаться</button>
+            </div>
+
+            <div class="choice">
+                <img src="images/mda.jpg" alt="Выбор 2">
+                <p class="choice-text">Не позориться, у вас было только одно свидание</p>
+                <button onclick="goTo('mda.html')">Промолчать</button>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
